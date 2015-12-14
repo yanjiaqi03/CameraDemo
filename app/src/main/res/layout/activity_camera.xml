@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/camera_title"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+             />
+
+        <FrameLayout
+            android:id="@+id/camera_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/camera_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/camera_finish"
+            android:minWidth="@dimen/camera_finish_min_width"
+            android:padding="@dimen/camera_finish_padding"
+            android:text="@string/camera_finish"
+            android:layout_marginRight="@dimen/camera_finish_margin_right"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddd"></View>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/image_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:paddingTop="@dimen/space_size" />
+
+</LinearLayout>
